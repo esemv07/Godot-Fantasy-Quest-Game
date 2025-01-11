@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://douj1jy4qd8tx"]
+
+[ext_resource type="FontFile" uid="uid://cq71q84jleaav" path="res://Fonts/knight-warrior-font/KnightWarrior-w16n8.otf" id="1_rugdu"]
+
+[node name="Interaction Manager" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -29.5
+offset_right = 1152.5
+offset_bottom = 227.0
+grow_horizontal = 2
+scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("1_rugdu")
+theme_override_font_sizes/font_size = 200
+text = "[E] TO INTERACT"
+horizontal_alignment = 1
+vertical_alignment = 1

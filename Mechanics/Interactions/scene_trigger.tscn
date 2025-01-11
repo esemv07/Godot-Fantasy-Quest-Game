@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhed51yw4ahhg"]
+
+[ext_resource type="Script" path="res://Mechanics/Interactions/scene_trigger.gd" id="1_4bx2e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01f2x"]
+
+[node name="SceneTrigger" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_4bx2e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_01f2x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
