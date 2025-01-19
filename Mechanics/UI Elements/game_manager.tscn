@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhwr7epylvfrn"]
+
+[ext_resource type="FontFile" uid="uid://cq71q84jleaav" path="res://Fonts/knight-warrior-font/KnightWarrior-w16n8.otf" id="1_6iwg2"]
+[ext_resource type="Script" path="res://Mechanics/UI Elements/game_manager.gd" id="1_68xo4"]
+[ext_resource type="Texture2D" uid="uid://6ppy6f33lqvy" path="res://Sprites/Gems/gemstone40.png" id="2_tvrxc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ae5f"]
+bg_color = Color(0.83118, 0.657057, 0.473949, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[node name="Game_Manager" type="Node"]
+script = ExtResource("1_68xo4")
+
+[node name="Quest Box" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="Quest Box"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 25.0
+offset_top = -197.0
+offset_right = 81.0
+offset_bottom = -153.0
+grow_vertical = 2
+scale = Vector2(5, 5)
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_6ae5f")
+
+[node name="Quest Title" type="RichTextLabel" parent="Quest Box"]
+z_index = 1
+offset_left = 35.0
+offset_top = 137.0
+offset_right = 1335.0
+offset_bottom = 261.0
+scale = Vector2(0.25, 0.25)
+theme_override_colors/default_color = Color(0.454524, 0.454524, 0.454524, 1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 100
+text = "Quest Title"
+
+[node name="Quest Description" type="RichTextLabel" parent="Quest Box"]
+z_index = 1
+offset_left = 35.0
+offset_top = 170.0
+offset_right = 892.0
+offset_bottom = 723.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 100
+text = "Quest Description"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="XP Label" type="Label" parent="CanvasLayer"]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 126.0
+offset_bottom = 144.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_6iwg2")
+theme_override_font_sizes/font_size = 100
+text = "XP"
+
+[node name="XP Count" type="Label" parent="CanvasLayer"]
+offset_left = 100.0
+offset_top = 30.0
+offset_right = 196.0
+offset_bottom = 144.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_6iwg2")
+theme_override_font_sizes/font_size = 100
+text = "0
+"
+
+[node name="Gem Count" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -142.0
+offset_top = 30.0
+offset_right = -46.0
+offset_bottom = 144.0
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_6iwg2")
+theme_override_font_sizes/font_size = 100
+text = "0
+"
+horizontal_alignment = 2
+
+[node name="Gemstone40" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1100, 58)
+scale = Vector2(3, 3)
+texture = ExtResource("2_tvrxc")

@@ -18,6 +18,11 @@ config/icon="res://Sprites/icon.svg"
 [autoload]
 
 SceneTrigger="*res://Mechanics/Interactions/scene_trigger.gd"
+GameManager="*res://Mechanics/UI Elements/game_manager.tscn"
+
+[display]
+
+window/stretch/aspect="ignore"
 
 [editor_plugins]
 
