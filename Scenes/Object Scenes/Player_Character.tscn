@@ -1,0 +1,544 @@
+[gd_scene load_steps=81 format=3 uid="uid://cv7cyibdtyery"]
+
+[ext_resource type="Script" path="res://Scripts/character_body_2d.gd" id="1_dony1"]
+[ext_resource type="Texture2D" uid="uid://cylsmxrwtoo06" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile000.png" id="2_ufp46"]
+[ext_resource type="Texture2D" uid="uid://bwinp7op16qys" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile001.png" id="3_rjq8b"]
+[ext_resource type="Texture2D" uid="uid://ctn663ddr6oo4" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile002.png" id="4_icwrk"]
+[ext_resource type="Texture2D" uid="uid://dmv5rawudjh0l" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile003.png" id="5_db0ep"]
+[ext_resource type="Texture2D" uid="uid://1chld3f2vc0f" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile004.png" id="6_vtfxs"]
+[ext_resource type="Texture2D" uid="uid://fkltxvu5knjn" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile005.png" id="7_ph2qb"]
+[ext_resource type="Texture2D" uid="uid://boj8i8eq3hijm" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile006.png" id="8_h4bey"]
+[ext_resource type="Texture2D" uid="uid://ot4lce2sw3ha" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile007.png" id="9_de5km"]
+[ext_resource type="Texture2D" uid="uid://c56nqivhqpqv8" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile008.png" id="10_ucmpu"]
+[ext_resource type="Texture2D" uid="uid://bf85hir3euq1e" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile009.png" id="11_joqhe"]
+[ext_resource type="Texture2D" uid="uid://dl6ax0d6cstbf" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile010.png" id="12_sxyw4"]
+[ext_resource type="Texture2D" uid="uid://b38flv5kysnf8" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile011.png" id="13_lfhb1"]
+[ext_resource type="Texture2D" uid="uid://dtsekrer781x1" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile012.png" id="14_uxwh7"]
+[ext_resource type="Texture2D" uid="uid://d3mcg5a1f1j2d" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile013.png" id="15_dbd3x"]
+[ext_resource type="Texture2D" uid="uid://cxd52vr5c7b4h" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile014.png" id="16_ecmes"]
+[ext_resource type="Texture2D" uid="uid://bnqjntkiumdln" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile015.png" id="17_y1jsj"]
+[ext_resource type="Texture2D" uid="uid://bya8bqutv2d2p" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile016.png" id="18_i6ma2"]
+[ext_resource type="Texture2D" uid="uid://csdhfqq4jctva" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 1/tile017.png" id="19_bvu24"]
+[ext_resource type="Texture2D" uid="uid://bqpc5opanhyo4" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile000.png" id="20_hci43"]
+[ext_resource type="Texture2D" uid="uid://dikdagri5fy5k" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile001.png" id="21_k2a7l"]
+[ext_resource type="Texture2D" uid="uid://brtugppg3y75k" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile002.png" id="22_yml7u"]
+[ext_resource type="Texture2D" uid="uid://fe5a54i6fosg" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile003.png" id="23_rsb7g"]
+[ext_resource type="Texture2D" uid="uid://dwolt1jsf1vk4" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile004.png" id="24_4dif4"]
+[ext_resource type="Texture2D" uid="uid://dimo1a55cfin7" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile005.png" id="25_m0tqy"]
+[ext_resource type="Texture2D" uid="uid://c2kok23kk526q" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile006.png" id="26_xxr70"]
+[ext_resource type="Texture2D" uid="uid://dg5ivxfpsedtg" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile007.png" id="27_bpu2f"]
+[ext_resource type="Texture2D" uid="uid://btsbds2wbea6p" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile008.png" id="28_sbcmp"]
+[ext_resource type="Texture2D" uid="uid://c5bbbgydetwyb" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile009.png" id="29_1cj78"]
+[ext_resource type="Texture2D" uid="uid://baxnpjxi5fyw6" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile010.png" id="30_24nl0"]
+[ext_resource type="Texture2D" uid="uid://nngc1owdsl61" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile011.png" id="31_h04gy"]
+[ext_resource type="Texture2D" uid="uid://bcvnqj6rp00jx" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile012.png" id="32_8o4m3"]
+[ext_resource type="Texture2D" uid="uid://bbaobwmltp7y4" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile013.png" id="33_1blj0"]
+[ext_resource type="Texture2D" uid="uid://r3khefi84flv" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile014.png" id="34_s6364"]
+[ext_resource type="Texture2D" uid="uid://b8sii2hxytu0t" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile015.png" id="35_ikkiv"]
+[ext_resource type="Texture2D" uid="uid://bkaechfmurtxp" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile016.png" id="36_kmspd"]
+[ext_resource type="Texture2D" uid="uid://b1fycfi2d3ovi" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 2/tile017.png" id="37_00hvi"]
+[ext_resource type="Texture2D" uid="uid://g2n00ax4k3gr" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile000.png" id="38_oh4j6"]
+[ext_resource type="Texture2D" uid="uid://bjeqtnx6o5wx6" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile001.png" id="39_trprl"]
+[ext_resource type="Texture2D" uid="uid://bppgp12kfr4j3" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile002.png" id="40_pqdrt"]
+[ext_resource type="Texture2D" uid="uid://cijjt3i7qb6hf" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile003.png" id="41_hcumu"]
+[ext_resource type="Texture2D" uid="uid://bxk8pjqxkec2a" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile004.png" id="42_0dgrd"]
+[ext_resource type="Texture2D" uid="uid://b848s6xnsncu" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile005.png" id="43_4ujsp"]
+[ext_resource type="Texture2D" uid="uid://bnmjkng4j6kyd" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile006.png" id="44_fprod"]
+[ext_resource type="Texture2D" uid="uid://lb0b5no0rclm" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile007.png" id="45_8xvis"]
+[ext_resource type="Texture2D" uid="uid://biqggmw3rtodn" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile008.png" id="46_uv7q7"]
+[ext_resource type="Texture2D" uid="uid://b41l7tboo7ykc" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile009.png" id="47_4y72q"]
+[ext_resource type="Texture2D" uid="uid://dxeaqxu3mimrc" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile010.png" id="48_t2487"]
+[ext_resource type="Texture2D" uid="uid://d4cxe1ec0xty7" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 3/tile011.png" id="49_ktj3r"]
+[ext_resource type="Texture2D" uid="uid://x7lgbp37co57" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 4/tile000.png" id="50_n6oay"]
+[ext_resource type="Texture2D" uid="uid://cy5lhvg8f7ys6" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 4/tile001.png" id="51_ofd1l"]
+[ext_resource type="Texture2D" uid="uid://bbc27xj0corhv" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 4/tile002.png" id="52_0r5ib"]
+[ext_resource type="Texture2D" uid="uid://c04eqvhfu8cc4" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile000.png" id="53_s3e7x"]
+[ext_resource type="Texture2D" uid="uid://clruk164gtch" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile001.png" id="54_07lcx"]
+[ext_resource type="Texture2D" uid="uid://bt1h40imh7t7q" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile002.png" id="55_3djrg"]
+[ext_resource type="Texture2D" uid="uid://b6ehd24ukd8ww" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile003.png" id="56_8qlow"]
+[ext_resource type="Texture2D" uid="uid://dk2tg206jh084" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile004.png" id="57_4df6e"]
+[ext_resource type="Texture2D" uid="uid://bq3ij4r40lbff" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile005.png" id="58_vr4g4"]
+[ext_resource type="Texture2D" uid="uid://cilt7c238kami" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile006.png" id="59_7pqqu"]
+[ext_resource type="Texture2D" uid="uid://cksxfqsfhkquf" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile007.png" id="60_fsn4q"]
+[ext_resource type="Texture2D" uid="uid://bq6ncxgcw84ha" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile008.png" id="61_gg6gi"]
+[ext_resource type="Texture2D" uid="uid://d1gr3xexn52bw" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile009.png" id="62_uyeci"]
+[ext_resource type="Texture2D" uid="uid://dk0ea6jw5tnyk" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile010.png" id="63_oj5qo"]
+[ext_resource type="Texture2D" uid="uid://7kurjhw4qj2u" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile011.png" id="64_8l4w2"]
+[ext_resource type="Texture2D" uid="uid://cobt70fe2qln5" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile012.png" id="65_qngfe"]
+[ext_resource type="Texture2D" uid="uid://b6qo78pnu0yfr" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile013.png" id="66_jpgvg"]
+[ext_resource type="Texture2D" uid="uid://bki8w6rwd1u1r" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile014.png" id="67_xsofk"]
+[ext_resource type="Texture2D" uid="uid://bkqpa8c5gpfvb" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile015.png" id="68_egt1n"]
+[ext_resource type="Texture2D" uid="uid://cdbqyhrqfevnr" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile016.png" id="69_uumo1"]
+[ext_resource type="Texture2D" uid="uid://ceq1jwf3kfha6" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 5/tile017.png" id="70_she82"]
+[ext_resource type="Texture2D" uid="uid://c7twycgbg54dc" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile000.png" id="71_c33bd"]
+[ext_resource type="Texture2D" uid="uid://bpnjqjy8biqsp" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile001.png" id="72_jhgsj"]
+[ext_resource type="Texture2D" uid="uid://ckw3ffqe8noku" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile002.png" id="73_faa7a"]
+[ext_resource type="Texture2D" uid="uid://cbc28rf3qxowc" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile003.png" id="74_opmdc"]
+[ext_resource type="Texture2D" uid="uid://cbs0qakoq78u7" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile004.png" id="75_egdpg"]
+[ext_resource type="Texture2D" uid="uid://djfv63ocy4uhk" path="res://Sprites/mystic_woods_free_2.2/sprites/characters/Player Animations/Animations 6/tile005.png" id="76_xhttj"]
+[ext_resource type="FontFile" uid="uid://cq71q84jleaav" path="res://Fonts/knight-warrior-font/KnightWarrior-w16n8.otf" id="77_8itci"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2bkcx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ufp46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rjq8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_icwrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_db0ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vtfxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ph2qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h4bey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_de5km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ucmpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_joqhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sxyw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lfhb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_uxwh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_dbd3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ecmes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_y1jsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i6ma2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bvu24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hci43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_k2a7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_yml7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rsb7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4dif4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_m0tqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xxr70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bpu2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sbcmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_1cj78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_24nl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h04gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8o4m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1blj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_s6364")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ikkiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_kmspd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_00hvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_oh4j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_trprl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_pqdrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hcumu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_0dgrd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_4ujsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fprod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_8xvis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_uv7q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4y72q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_t2487")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ktj3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_n6oay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ofd1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_0r5ib")
+}],
+"loop": true,
+"name": &"all",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_uv7q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4y72q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_t2487")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ktj3r")
+}],
+"loop": true,
+"name": &"attack_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_oh4j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_trprl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_pqdrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hcumu")
+}],
+"loop": true,
+"name": &"attack_forward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_0dgrd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_4ujsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fprod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_8xvis")
+}],
+"loop": true,
+"name": &"attack_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_n6oay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ofd1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_0r5ib")
+}],
+"loop": true,
+"name": &"fall_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_s3e7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_07lcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_3djrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_8qlow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_4df6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_vr4g4")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_7pqqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_fsn4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_gg6gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_uyeci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_oj5qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_8l4w2")
+}],
+"loop": true,
+"name": &"idle_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_7pqqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_fsn4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_gg6gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_uyeci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_oj5qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_8l4w2")
+}],
+"loop": true,
+"name": &"idle_right",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_qngfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_jpgvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_xsofk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_egt1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_uumo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_she82")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_8o4m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1blj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_s6364")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ikkiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_kmspd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_00hvi")
+}],
+"loop": true,
+"name": &"walk_back",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_hci43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_k2a7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_yml7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rsb7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4dif4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_m0tqy")
+}],
+"loop": true,
+"name": &"walk_forward",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_c33bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_jhgsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_faa7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_opmdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_egdpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_xhttj")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_xxr70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bpu2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sbcmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_1cj78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_24nl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h04gy")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3mx5d"]
+radius = 6.83333
+height = 14.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lu3b6"]
+radius = 20.7632
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
+scale = Vector2(1.5, 1.5)
+collision_mask = 14
+script = ExtResource("1_dony1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 8.66667)
+sprite_frames = SubResource("SpriteFrames_2bkcx")
+animation = &"walk_right"
+offset = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-0.5, 4.16667)
+shape = SubResource("CapsuleShape2D_3mx5d")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Interaction Components" type="Node2D" parent="."]
+z_index = 3
+
+[node name="InteractionArea" type="Area2D" parent="Interaction Components"]
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction Components/InteractionArea"]
+position = Vector2(-0.666667, 1.33333)
+shape = SubResource("CircleShape2D_lu3b6")
+
+[node name="InteractLabel" type="Label" parent="Interaction Components"]
+offset_left = -69.3333
+offset_top = -21.3333
+offset_right = 2697.67
+offset_bottom = 205.667
+scale = Vector2(0.05, 0.05)
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("77_8itci")
+theme_override_font_sizes/font_size = 100
+text = "test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="Interaction Components/InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="Interaction Components/InteractionArea" to="." method="_on_interaction_area_area_exited"]

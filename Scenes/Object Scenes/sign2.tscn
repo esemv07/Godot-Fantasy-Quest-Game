@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvqgbfk6mhti"]
+
+[ext_resource type="Script" path="res://Scripts/sign2.tres.gd" id="1_fifwn"]
+[ext_resource type="Texture2D" uid="uid://cump6hodk6b04" path="res://Sprites/mystic_woods_free_2.2/sprites/objects/Individual Objects/tile000.png" id="2_kn74k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u1s84"]
+radius = 32.9848
+
+[node name="Sign" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_fifwn")
+
+[node name="Tile000" type="Sprite2D" parent="."]
+texture = ExtResource("2_kn74k")
+offset = Vector2(0, -6)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_u1s84")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

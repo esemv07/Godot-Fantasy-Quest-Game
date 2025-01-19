@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmve0d3i2t67p"]
+
+[ext_resource type="Texture2D" uid="uid://cump6hodk6b04" path="res://Sprites/mystic_woods_free_2.2/sprites/objects/Individual Objects/tile000.png" id="1_0hw1g"]
+[ext_resource type="Script" path="res://Scripts/sign.gd" id="1_12w7j"]
+[ext_resource type="FontFile" uid="uid://cq71q84jleaav" path="res://Fonts/knight-warrior-font/KnightWarrior-w16n8.otf" id="3_0ntkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ckdq7"]
+size = Vector2(6, 6)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2b5pw"]
+radius = 25.0799
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x624o"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[node name="StaticBody2D" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+collision_layer = 4
+script = ExtResource("1_12w7j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_ckdq7")
+
+[node name="Tile000" type="Sprite2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+texture = ExtResource("1_0hw1g")
+offset = Vector2(0, -6)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_2b5pw")
+
+[node name="Panel" type="Panel" parent="."]
+z_index = 2
+offset_left = -20.0
+offset_top = -31.0
+offset_right = 20.0
+offset_bottom = -14.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_x624o")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -6.0
+offset_right = 702.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_0ntkv")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

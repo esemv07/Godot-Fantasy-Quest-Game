@@ -2,13 +2,14 @@
 
 [ext_resource type="Script" path="res://Mechanics/Interactions/scene_trigger.gd" id="1_4bx2e"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_01f2x"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t31ft"]
+height = 26.0
 
 [node name="SceneTrigger" type="Area2D"]
 collision_layer = 8
 script = ExtResource("1_4bx2e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_01f2x")
+shape = SubResource("CapsuleShape2D_t31ft")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

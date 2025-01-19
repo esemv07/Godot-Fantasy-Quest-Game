@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Fantasy Quest Game"
-run/main_scene="res://Basecamp.tscn"
+run/main_scene="res://Scenes/Map Scenes/Basecamp.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Sprites/icon.svg"
+
+[autoload]
+
+SceneTrigger="*res://Mechanics/Interactions/scene_trigger.gd"
 
 [editor_plugins]
 
