@@ -67,6 +67,7 @@ interact={
 2d_physics/layer_2="Environment"
 2d_physics/layer_3="Objects"
 2d_physics/layer_4="Interactions"
+2d_physics/layer_5="NPCs"
 
 [rendering]
 

@@ -2,7 +2,8 @@ class_name SearchQuest extends QuestManager
 
 
 func start_quest() -> void:
-	if quest_status == QuestStatus.available:
+	if (!GameManager.quest_active) and (quest_status == QuestStatus.available):
+		GameManager.quest_active = true
 		quest_status = QuestStatus.started
 		QuestBox.visible = true
 		QuestTitle.text = quest_name
@@ -17,6 +18,7 @@ func reached_goal() -> void:
 
 func finish_quest() -> void:
 	if quest_status == QuestStatus.reached_goal:
+		GameManager.quest_active = false
 		quest_status = QuestStatus.finished
 		QuestBox.visible = false
 		GameManager.gems += gem_amount
