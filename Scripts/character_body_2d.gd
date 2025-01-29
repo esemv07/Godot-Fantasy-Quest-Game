@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	if GameManager.player_health <= 0:
 		player_alive = false #game over
 		GameManager.player_health = 0
-		print("dead")
+	
 	
 	if Input.is_action_just_pressed("interact"):
 		execute_interaction()
@@ -88,12 +88,18 @@ func execute_interaction():
 
 
 func _on_player_hitbox_body_entered(body: Node2D) -> void:
-	if body.name == "Enemy":
+	if body.name == "Enemy" or body.name == "Enemy1" or \
+	body.name == "Enemy2" or body.name == "Enemy3" or \
+	body.name == "Enemy4" or body.name == "Enemy5" or \
+	body.name == "Enemy6" or body.name == "Enemy7":
 		enemy_in_attack_range = true
 
 
 func _on_player_hitbox_body_exited(body: Node2D) -> void:
-	if body.name == "Enemy":
+	if body.name == "Enemy" or body.name == "Enemy1" or \
+	body.name == "Enemy2" or body.name == "Enemy3" or \
+	body.name == "Enemy4" or body.name == "Enemy5" or \
+	body.name == "Enemy6" or body.name == "Enemy7":
 		enemy_in_attack_range = false
 
 
@@ -106,7 +112,6 @@ func enemy_attack():
 		GameManager.player_health -= 10
 		enemy_attack_cooldown = false
 		$AttackCooldown.start()
-		print(GameManager.player_health)
 
 
 func _on_attack_cooldown_timeout() -> void:

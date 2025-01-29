@@ -63,7 +63,6 @@ func deal_with_damage():
 			can_take_damage = false
 			if health > 0:
 				hit = true
-			print("slime health = ", health)
 			if health <= 0:
 				health = 0
 				hit = false
@@ -79,7 +78,8 @@ func _on_hit_timer_timeout() -> void:
 
 
 func _on_death_timer_timeout() -> void:
-	quest.reached_goal()
+	if quest != null:
+		quest.reached_goal()
 	self.queue_free()
 
 

@@ -1,0 +1,17 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://bycssl4xlbfvi"]
+
+[ext_resource type="Texture2D" uid="uid://cy4qnckqwe3qq" path="res://Sprites/MagicMarket/Background/Animations/Cauldron_Frames/tile000.png" id="1_p5fkm"]
+[ext_resource type="Texture2D" uid="uid://bjp0qdxwqss6l" path="res://Sprites/MagicMarket/Background/Animations/Cauldron_Frames/tile001.png" id="2_4anum"]
+[ext_resource type="Texture2D" uid="uid://43141upuur27" path="res://Sprites/MagicMarket/Background/Animations/Cauldron_Frames/tile002.png" id="3_phv74"]
+[ext_resource type="Texture2D" uid="uid://vx7ofcd0ilh5" path="res://Sprites/MagicMarket/Background/Animations/Cauldron_Frames/tile003.png" id="4_765jt"]
+
+[resource]
+frames = 4
+frame_0/texture = ExtResource("1_p5fkm")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("2_4anum")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("3_phv74")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("4_765jt")
+frame_3/duration = 0.2

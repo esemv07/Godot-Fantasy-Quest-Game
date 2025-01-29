@@ -1,0 +1,17 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://en4fipwlh83u"]
+
+[ext_resource type="Texture2D" uid="uid://kblk1eltdkre" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile000.png" id="1_xyc41"]
+[ext_resource type="Texture2D" uid="uid://y2mj4tifk5tr" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile001.png" id="2_6dngv"]
+[ext_resource type="Texture2D" uid="uid://bdnuxekaqwox3" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile002.png" id="3_xnwlr"]
+[ext_resource type="Texture2D" uid="uid://3fwt6x111pmw" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile003.png" id="4_bdene"]
+
+[resource]
+frames = 4
+frame_0/texture = ExtResource("1_xyc41")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("2_6dngv")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("3_xnwlr")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("4_bdene")
+frame_3/duration = 0.2

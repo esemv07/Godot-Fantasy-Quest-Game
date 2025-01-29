@@ -24,14 +24,10 @@ script = ExtResource("1_68xo4")
 visible = false
 
 [node name="Panel" type="Panel" parent="Quest Box"]
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 25.0
-offset_top = -197.0
-offset_right = 81.0
-offset_bottom = -153.0
-grow_vertical = 2
+offset_left = 20.0
+offset_top = 125.0
+offset_right = 76.0
+offset_bottom = 175.0
 scale = Vector2(5, 5)
 size_flags_horizontal = 6
 size_flags_vertical = 6
@@ -54,12 +50,56 @@ z_index = 1
 offset_left = 35.0
 offset_top = 170.0
 offset_right = 892.0
-offset_bottom = 723.0
+offset_bottom = 807.0
 scale = Vector2(0.3, 0.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("1_6iwg2")
 theme_override_font_sizes/normal_font_size = 100
 text = "Quest Description"
+
+[node name="Quest Lock" type="RichTextLabel" parent="Quest Box"]
+visible = false
+z_index = 1
+offset_left = 61.0
+offset_top = 179.0
+offset_right = 758.0
+offset_bottom = 632.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 125
+bbcode_enabled = true
+text = "[center]Quest Lock[/center]"
+
+[node name="Jewels Label" type="RichTextLabel" parent="Quest Box"]
+visible = false
+z_index = 1
+offset_left = 39.0
+offset_top = 331.0
+offset_right = 1031.0
+offset_bottom = 455.0
+scale = Vector2(0.25, 0.25)
+theme_override_colors/default_color = Color(0.454524, 0.454524, 0.454524, 1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 100
+text = "Jewels Collected:"
+
+[node name="Jewels Collected" type="RichTextLabel" parent="Quest Box"]
+visible = false
+z_index = 1
+offset_left = 222.0
+offset_top = 331.0
+offset_right = 482.0
+offset_bottom = 455.0
+scale = Vector2(0.25, 0.25)
+theme_override_colors/default_color = Color(0.454524, 0.454524, 0.454524, 1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 100
+text = "0
+"
+
+[node name="QuestBoxDisappear" type="Timer" parent="Quest Box"]
+wait_time = 5.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -88,9 +128,9 @@ text = "0
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -142.0
+offset_left = -202.0
 offset_top = 30.0
-offset_right = -46.0
+offset_right = 14.0
 offset_bottom = 144.0
 grow_horizontal = 0
 scale = Vector2(0.5, 0.5)
@@ -100,9 +140,9 @@ text = "0
 "
 horizontal_alignment = 2
 
-[node name="Gemstone40" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(1100, 58)
-scale = Vector2(3, 3)
+[node name="Gemstone40" type="Sprite2D" parent="CanvasLayer/Gem Count"]
+position = Vector2(300, 56)
+scale = Vector2(6, 6)
 texture = ExtResource("2_tvrxc")
 
 [node name="HealthBar" type="ProgressBar" parent="CanvasLayer"]
@@ -124,4 +164,16 @@ show_percentage = false
 wait_time = 3.0
 autostart = true
 
+[node name="You Win" type="RichTextLabel" parent="CanvasLayer"]
+visible = false
+offset_left = 285.0
+offset_top = 215.0
+offset_right = 6175.0
+offset_bottom = 955.0
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/normal_font = ExtResource("1_6iwg2")
+theme_override_font_sizes/normal_font_size = 500
+text = "You Win! Thanks for Playing!"
+
+[connection signal="timeout" from="Quest Box/QuestBoxDisappear" to="." method="_on_quest_box_disappear_timeout"]
 [connection signal="timeout" from="CanvasLayer/HealthRegen" to="." method="_on_health_regen_timeout"]

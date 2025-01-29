@@ -1,0 +1,20 @@
+[gd_resource type="AnimatedTexture" load_steps=6 format=3 uid="uid://c7gplqh7770on"]
+
+[ext_resource type="Texture2D" uid="uid://kjjgcwjxmkq" path="res://Sprites/MagicMarket/Background/Animations/Crystal_Frames/tile000.png" id="1_1ap40"]
+[ext_resource type="Texture2D" uid="uid://b70rv6rjt7cgg" path="res://Sprites/MagicMarket/Background/Animations/Crystal_Frames/tile001.png" id="2_cj6ix"]
+[ext_resource type="Texture2D" uid="uid://pbieyrcqo4tn" path="res://Sprites/MagicMarket/Background/Animations/Crystal_Frames/tile002.png" id="3_m6kr7"]
+[ext_resource type="Texture2D" uid="uid://b0ao83qewslxr" path="res://Sprites/MagicMarket/Background/Animations/Crystal_Frames/tile003.png" id="4_rgoji"]
+[ext_resource type="Texture2D" uid="uid://cibueela4yx66" path="res://Sprites/MagicMarket/Background/Animations/Crystal_Frames/tile004.png" id="5_f3sgt"]
+
+[resource]
+frames = 5
+frame_0/texture = ExtResource("1_1ap40")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("2_cj6ix")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("3_m6kr7")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("4_rgoji")
+frame_3/duration = 0.2
+frame_4/texture = ExtResource("5_f3sgt")
+frame_4/duration = 0.2

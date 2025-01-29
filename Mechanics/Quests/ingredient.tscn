@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://bn4suvq2a2qe3"]
+
+[ext_resource type="Script" path="res://Mechanics/Quests/ingredient.gd" id="1_2whkj"]
+[ext_resource type="Texture2D" uid="uid://kblk1eltdkre" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile000.png" id="1_mjoqj"]
+[ext_resource type="Texture2D" uid="uid://y2mj4tifk5tr" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile001.png" id="2_1ggai"]
+[ext_resource type="Texture2D" uid="uid://bdnuxekaqwox3" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile002.png" id="3_knojd"]
+[ext_resource type="Texture2D" uid="uid://3fwt6x111pmw" path="res://Sprites/MagicMarket/Background/Animations/Plant01_Frames/tile003.png" id="4_kttiw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lhpot"]
+radius = 6.0
+height = 16.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gn50s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mjoqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1ggai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_knojd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kttiw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_2whkj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lhpot")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_gn50s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
